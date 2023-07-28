@@ -267,11 +267,11 @@ section:nth-child(2n+1) {
 }
 
 .timeline-box:nth-child(2n) {
-    left: 53.2%;
+    left: 53%;
 }
 
 .timeline-box:nth-child(2n+1)::after {
-    right: -12%;
+    right: -11.8%;
 }
 
 .timeline-box:nth-child(2n)::after {
@@ -282,14 +282,24 @@ section:nth-child(2n+1) {
     padding: 8px;
 }
 
-.timeline-image {
+/* .timeline-image {
     position: absolute;
-    width: 60%;
-    /* height: 150px; */
+    width: 50%;
+    height: 150px;
     overflow: hidden;
 }
 
 .timeline-image > img {
+    width: 100%;
+} */
+
+.timeline-logo {
+    position: absolute;
+    width: 40px;
+    overflow: hidden;
+}
+
+.timeline-logo > img {
     width: 100%;
 }
 
@@ -299,7 +309,7 @@ section:nth-child(2n+1) {
     top: 10%;
     left: 50%;
     border: 1px dashed #0096fa6b;
-    height: 66%;
+    height: 75%;
     color: #433E3F;
 }
 
@@ -317,21 +327,23 @@ section:nth-child(2n+1) {
 }
 
 .experience-designation {
-    font-size: 1.4rem;
+    padding: 0px;
+    font-size: 80%;
+    /* margin: 5px; */
 }
 
 .experience-company-name {
     margin: 5px 0 0;
     color: #eb822d;
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 80%;
 }
 
 .experience-duration {
     color: #9e9b9b;
     font-weight: 100;
     color: grey;
-    font-size: 1rem;
+    font-size: 57.15%;
 }
 
 .experience-description {
@@ -347,7 +359,7 @@ section:nth-child(2n+1) {
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
-    padding: 0 50px;
+    padding: 0 10%;
     margin-bottom: 20px;
     justify-content: space-around;
 }
@@ -524,6 +536,10 @@ button:focus {
 
 /* Common Margin Classes */
 
+.m0 {
+    margin: 0;
+}
+
 .mb75px {
     margin-bottom: 75px;
 }
@@ -587,9 +603,11 @@ button:focus {
 
 @media only screen and (max-width: 572px) {
 
-    .timeline-box {
-        width: 100%;
-        left: 10% !important;
+    #logo {
+        width: 26.67px;
+        position: fixed;
+        left: 6.67px;
+        top: 10px;
     }
 
     .bars {
@@ -599,17 +617,139 @@ button:focus {
     .nav-menu {
         display: none;
     }
+
+    #about {
+        margin-bottom: 20px;
+    }
+
+    #my-name {
+        font-size: 2rem;
+        letter-spacing: 0.067rem;
+        margin-bottom: 0.33rem;
+    }
+
+    .social-icons li a img {
+        width: 0.67rem;
+        padding: 5.33px;
+    }
+
+    #my-image {
+        height: 8rem;
+        width: 8rem;
+        margin-top: -4.33rem;
+    }
+
+    #about-para {
+        padding: 10px;
+        width: 75%;
+        line-height: 18.67px;
+        font-size: 0.733rem;
+    }
+
+    .section-heading {
+        width: auto;
+        height: 0.5rem;
+        padding: 13.33px 6.67px 6.67px;
+        font-weight: 400;
+    }
+    
+    .section-heading span {
+        font-size: 26.67px;
+        margin-right: 0.5rem;
+    }
+
+    .skills-display {
+        height: 20rem;
+        padding: 6.67px;
+        margin-bottom: 13.33px;
+    }
+    
+    .skill-progress {
+        width: 7rem;
+        height: 1.5rem;
+        border-radius: 0.67rem;
+        margin: 16.67px;
+        overflow: hidden;
+    }
+    
+    .skill-name span {
+        font-size: 0.85rem;
+        margin-left: 10px;
+        vertical-align: 10px;
+    }
+
+    .timeline-logo {
+        width: 30px;
+    }
+
+    .timeline-box::after {
+        left: -12.8% !important;
+    }
+    
+    .my-details-info-container {
+        margin-bottom: 15px;
+        font-size: 0.9rem;
+    }
+    
+    #contact-form input,
+    textarea {
+        line-height: 1.067;
+        font-size: 1rem;
+    }
+    
+    #contact-form button[type="submit"] {
+        background: transparent;
+        font-size: 0.95rem;
+        border: 2px solid white;
+        margin-top: 5%;
+        margin-left: 35%;
+        border-radius: 2px;
+        color: white;
+        font-family: sans-serif;
+        font-weight: 700;
+        letter-spacing: 0.046875em;
+        line-height: 1;
+        padding: 0.8em 0.8em 0.78em;
+        text-transform: uppercase;
+    }
+    
+    #contact-form button:hover {
+        background: white;
+        color: #13386fe0;
+    }
+    
+    #contact .social-icons li a i {
+        font-size: 1.2rem;
+        margin: 40px 10px 10px;
+        padding: 10px 14px 20px 10px;
+    
+    }
+    
+    input:focus,
+    select:focus,
+    textarea:focus,
+    button:focus {
+        outline: none;
+    }
 }
 
 @media only screen and (max-width: 768px) {
 
     .timeline-box {
         width: 90%;
-        left: 10% !important;
+        left: 11%;
+    }
+
+    .timeline-box:nth-child(2n) {
+        left: 11%;
     }
 
     .timeline-box::after {
-        left: -9.3% !important;
+        left: -11.5%;
+    }
+
+    .timeline-box:nth-child(2n)::after {
+        left: -11.5%;
     }
 
     #timeline-divider {
